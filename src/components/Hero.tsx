@@ -11,7 +11,6 @@ export default function Hero() {
           <ArrowIcon />
         </button>
       </div>
-      <div></div>
     </div>
   );
 }

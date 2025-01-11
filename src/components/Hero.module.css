@@ -1,6 +1,5 @@
 .hero {
-  padding: 2.5rem;
-  padding-bottom: 5.5rem;
+  height: var(--hero-height);
   background-image: url(../assets/pattern-bg-desktop.png);
   display: flex;
   flex-direction: column;
@@ -9,6 +8,7 @@
 
   h1 {
     color: #ffffff;
+    margin-top: 2.5rem;
   }
 }
 

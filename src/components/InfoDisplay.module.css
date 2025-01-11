@@ -3,7 +3,7 @@
   position: absolute;
   left: var(--margin);
   right: var(--margin);
-  transform: translateY(-3.5rem);
+  transform: translateY(-4.5rem);
   display: flex;
   gap: 0.5rem;
   justify-content: space-between;
@@ -12,6 +12,7 @@
   border: none;
   border-radius: var(--border-radius);
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  z-index: 5000;
 
   div {
     display: flex;
@@ -34,5 +35,4 @@
 .infoContainer > .divider {
   width: 1px;
   background-color: var(--color-dark-grey);
-  margin: 2px 0;
 }
