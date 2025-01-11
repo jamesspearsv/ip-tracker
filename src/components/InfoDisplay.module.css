@@ -6,7 +6,7 @@
   top: 0;
   margin-top: 12rem;
   display: flex;
-  gap: 0.5rem;
+  gap: 1.5rem;
   justify-content: space-between;
   background-color: #ffffff;
   padding: 2.5rem;
@@ -19,6 +19,7 @@
     display: flex;
     flex-direction: column;
     position: relative;
+    text-align: center;
   }
 
   p {
@@ -35,6 +36,7 @@
 
 .infoContainer > .divider {
   width: 1px;
+  margin: 0 1rem;
   background-color: var(--color-dark-grey);
 }
 

@@ -1,28 +1,45 @@
+import { geoAPIRes } from '../types/api';
 import styles from './InfoDisplay.module.css';
 
-// hack: hr dividers should be rendered using ::after psuedo-class
+// hack: hr dividers should be rendered using ::after pseudo-class
 
-export default function InfoDisplay() {
+type InfoDisplayProps = {
+  ip: geoAPIRes['ip'];
+  timezone: geoAPIRes['time_zone']['offset'];
+  isp: geoAPIRes['isp'];
+  location: {
+    city: geoAPIRes['city'];
+    state: geoAPIRes['state_code'];
+    zip: geoAPIRes['zipcode'];
+  };
+};
+
+export default function InfoDisplay({
+  ip,
+  timezone,
+  isp,
+  location,
+}: InfoDisplayProps) {
   return (
     <div className={styles.infoContainer}>
       <div>
         <div className={styles.heading}>IP ADDRESS</div>
-        <p>192.168.0.101</p>
+        <p>{ip}</p>
       </div>
       <hr className={styles.divider} />
       <div>
         <div className={styles.heading}>LOCATION</div>
-        <p>Bridgeport, WV 26330</p>
+        <p>{`${location.city}, ${location.state} ${location.zip}`}</p>
       </div>
       <hr className={styles.divider} />
       <div>
         <div className={styles.heading}>TIMEZONE</div>
-        <p>America/New York</p>
+        <p>UTC {timezone.toLocaleString()}</p>
       </div>
       <hr className={styles.divider} />
       <div>
         <div className={styles.heading}>ISP</div>
-        <p>Frontier</p>
+        <p>{isp}</p>
       </div>
     </div>
   );
