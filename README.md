@@ -112,4 +112,4 @@ Helpful articles and guides on `useRef`
 ## Author
 
 - Website - [James Spears](https://jspears.me)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@jamesspearsv](https://www.frontendmentor.io/profile/jamesspearsv)
