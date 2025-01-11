@@ -3,7 +3,8 @@
   position: absolute;
   left: var(--margin);
   right: var(--margin);
-  transform: translateY(-4.5rem);
+  top: 0;
+  margin-top: 12rem;
   display: flex;
   gap: 0.5rem;
   justify-content: space-between;
@@ -35,4 +36,19 @@
 .infoContainer > .divider {
   width: 1px;
   background-color: var(--color-dark-grey);
+}
+
+@media screen and (max-width: 768px) {
+  .infoContainer {
+    flex-direction: column;
+    left: 1.5rem;
+    right: 1.5rem;
+    text-align: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  .divider {
+    display: none;
+  }
 }

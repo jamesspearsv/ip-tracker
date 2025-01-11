@@ -1,5 +1,7 @@
 import styles from './InfoDisplay.module.css';
 
+// hack: hr dividers should be rendered using ::after psuedo-class
+
 export default function InfoDisplay() {
   return (
     <div className={styles.infoContainer}>

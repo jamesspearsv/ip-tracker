@@ -38,3 +38,17 @@
     background-color: var(--color-dark-grey);
   }
 }
+
+@media screen and (max-width: 768px) {
+  .hero {
+    padding: 0 1.5rem;
+  }
+
+  .input {
+    width: 100%;
+
+    input {
+      flex: 1;
+    }
+  }
+}
