@@ -16,6 +16,7 @@
   display: flex;
 
   input {
+    cursor: pointer;
     padding: 1rem;
     border: none;
     width: 35rem;
@@ -25,10 +26,15 @@
   }
 
   button {
+    cursor: pointer;
     background-color: var(--color-very-dark-grey);
     border: none;
     padding: 1rem 1.25rem;
     border-top-right-radius: var(--border-radius);
     border-bottom-right-radius: var(--border-radius);
+  }
+
+  button:hover {
+    background-color: var(--color-dark-grey);
   }
 }
