@@ -1,0 +1,38 @@
+.infoContainer {
+  --margin: 10%;
+  position: absolute;
+  left: var(--margin);
+  right: var(--margin);
+  transform: translateY(-3.5rem);
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border: none;
+  border-radius: var(--border-radius);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  p {
+    font-size: 1.5rem;
+    text-wrap: balance;
+    font-weight: var(--weight-bold);
+  }
+}
+
+.heading {
+  color: var(--color-dark-grey);
+  font-weight: var(--weight-bolder);
+}
+
+.infoContainer > .divider {
+  width: 1px;
+  background-color: var(--color-dark-grey);
+  margin: 2px 0;
+}
